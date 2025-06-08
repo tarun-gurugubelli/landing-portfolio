@@ -30,19 +30,19 @@ export default function Component() {
           </div>
           <div className="flex items-center space-x-4">
             <Link
-              href="https://github.com"
+              href="https://github.com/tarun-gurugubelli"
               className="text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors duration-300"
             >
               <Github className="w-6 h-6" />
             </Link>
             <Link
-              href="https://linkedin.com"
+              href="https://linkedin.com/in/tarun-gurugubelli"
               className="text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors duration-300"
             >
               <Linkedin className="w-6 h-6" />
             </Link>
             <Link
-              href="mailto:contact@example.com"
+              href="mailto:tarun.gurugubelli@example.com"
               className="text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors duration-300"
             >
               <Mail className="w-6 h-6" />

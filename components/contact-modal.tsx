@@ -14,14 +14,14 @@ export function ContactModal({ isOpen, onClose }: ContactModalProps) {
 
     switch (platform) {
       case "github":
-        url = "https://github.com/yourusername" // Replace with your GitHub URL
+        url = "https://github.com/tarun-gurugubelli" // Replace with your actual GitHub URL
         break
       case "linkedin":
-        url = "https://linkedin.com/in/yourprofile" // Replace with your LinkedIn URL
+        url = "https://linkedin.com/in/tarun-gurugubelli" // Replace with your actual LinkedIn URL
         break
       case "email":
         url =
-          "mailto:your.email@example.com?subject=Let's Connect&body=Hi, I'd like to discuss potential collaboration opportunities." // Replace with your email
+          "mailto:tarun.gurugubelli@example.com?subject=Let's Connect&body=Hi, I'd like to discuss potential collaboration opportunities." // Replace with your actual email
         break
     }
 
