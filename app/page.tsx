@@ -26,7 +26,7 @@ export default function Component() {
       <header className="relative z-10 px-4 py-6 sm:px-6 lg:px-8 border-b border-gray-200 dark:border-gray-800">
         <nav className="flex justify-between items-center max-w-7xl mx-auto">
           <div className="text-2xl font-bold text-black dark:text-white transition-colors duration-300">
-            Portfolio Hub
+            Tarun's Portfolio Hub
           </div>
           <div className="flex items-center space-x-4">
             <Link
@@ -42,7 +42,7 @@ export default function Component() {
               <Linkedin className="w-6 h-6" />
             </Link>
             <Link
-              href="mailto:tarun.gurugubelli@example.com"
+              href="mailto:tarungurugubelli@outlook.com"
               className="text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors duration-300"
             >
               <Mail className="w-6 h-6" />
@@ -73,7 +73,7 @@ export default function Component() {
               {/* MEAN Stack Portfolio */}
               <div className="group relative">
                 <div className="absolute -inset-1 bg-black dark:bg-white rounded-2xl opacity-0 group-hover:opacity-10 transition duration-500"></div>
-                <Link href="/mean-stack" className="relative block">
+                <Link href="https://mean.tarungurugubelli.com" target='_blank' className="relative block">
                   <div className="bg-gray-50 dark:bg-gray-900 rounded-2xl p-8 sm:p-10 border-2 border-gray-200 dark:border-gray-800 hover:border-black dark:hover:border-white transition-all duration-500 transform hover:scale-105 hover:-translate-y-2">
                     <div className="flex justify-center mb-6">
                       <div className="p-4 bg-black dark:bg-white rounded-full">
@@ -98,7 +98,7 @@ export default function Component() {
               {/* DevOps Portfolio */}
               <div className="group relative">
                 <div className="absolute -inset-1 bg-black dark:bg-white rounded-2xl opacity-0 group-hover:opacity-10 transition duration-500"></div>
-                <Link href="/devops" className="relative block">
+                <Link href="https://devops.tarungurugubelli.com" target="_blank" className="relative block">
                   <div className="bg-gray-50 dark:bg-gray-900 rounded-2xl p-8 sm:p-10 border-2 border-gray-200 dark:border-gray-800 hover:border-black dark:hover:border-white transition-all duration-500 transform hover:scale-105 hover:-translate-y-2">
                     <div className="flex justify-center mb-6">
                       <div className="p-4 bg-black dark:bg-white rounded-full">
@@ -148,7 +148,7 @@ export default function Component() {
                   Experience
                 </h3>
                 <p className="text-gray-700 dark:text-gray-300 leading-relaxed transition-colors duration-300">
-                  5+ years of hands-on experience in developing scalable web applications and managing cloud
+                  3+ years of hands-on experience in developing scalable web applications and managing cloud
                   infrastructure across various industries and project scales.
                 </p>
               </div>
@@ -207,7 +207,7 @@ export default function Component() {
       <footer className="relative z-10 py-8 px-4 sm:px-6 lg:px-8 border-t border-gray-200 dark:border-gray-800">
         <div className="max-w-7xl mx-auto text-center">
           <p className="text-gray-600 dark:text-gray-400 transition-colors duration-300">
-            © {new Date().getFullYear()} Portfolio Hub. Crafted with passion and precision.
+            © {new Date().getFullYear()} Tarun's Portfolio Hub. Crafted with passion.
           </p>
         </div>
       </footer>

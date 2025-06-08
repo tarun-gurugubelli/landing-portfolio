@@ -21,7 +21,7 @@ export function ContactModal({ isOpen, onClose }: ContactModalProps) {
         break
       case "email":
         url =
-          "mailto:tarun.gurugubelli@example.com?subject=Let's Connect&body=Hi, I'd like to discuss potential collaboration opportunities." // Replace with your actual email
+          "mailto:tarungurugubelli@outlook.com?subject=Let's Connect&body=Hi, I'd like to discuss potential collaboration opportunities." // Replace with your actual email
         break
     }
 
