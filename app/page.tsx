@@ -73,7 +73,7 @@ export default function Component() {
               {/* MEAN Stack Portfolio */}
               <div className="group relative">
                 <div className="absolute -inset-1 bg-black dark:bg-white rounded-2xl opacity-0 group-hover:opacity-10 transition duration-500"></div>
-                <Link href="https://mean.tarungurugubelli.com" target='_blank' className="relative block">
+                <Link href="https://mean.tarun.win" target='_blank' className="relative block">
                   <div className="bg-gray-50 dark:bg-gray-900 rounded-2xl p-8 sm:p-10 border-2 border-gray-200 dark:border-gray-800 hover:border-black dark:hover:border-white transition-all duration-500 transform hover:scale-105 hover:-translate-y-2">
                     <div className="flex justify-center mb-6">
                       <div className="p-4 bg-black dark:bg-white rounded-full">
@@ -98,7 +98,7 @@ export default function Component() {
               {/* DevOps Portfolio */}
               <div className="group relative">
                 <div className="absolute -inset-1 bg-black dark:bg-white rounded-2xl opacity-0 group-hover:opacity-10 transition duration-500"></div>
-                <Link href="https://devops.tarungurugubelli.com" target="_blank" className="relative block">
+                <Link href="https://devops.tarun.win" target="_blank" className="relative block">
                   <div className="bg-gray-50 dark:bg-gray-900 rounded-2xl p-8 sm:p-10 border-2 border-gray-200 dark:border-gray-800 hover:border-black dark:hover:border-white transition-all duration-500 transform hover:scale-105 hover:-translate-y-2">
                     <div className="flex justify-center mb-6">
                       <div className="p-4 bg-black dark:bg-white rounded-full">
