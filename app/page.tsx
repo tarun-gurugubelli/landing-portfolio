@@ -148,7 +148,7 @@ export default function Component() {
                   Experience
                 </h3>
                 <p className="text-gray-700 dark:text-gray-300 leading-relaxed transition-colors duration-300">
-                  3+ years of hands-on experience in developing scalable web applications and managing cloud
+                  4+ years of hands-on experience in developing scalable web applications and managing cloud
                   infrastructure across various industries and project scales.
                 </p>
               </div>
