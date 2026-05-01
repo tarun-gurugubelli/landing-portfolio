@@ -27,15 +27,15 @@ A professional portfolio landing page built with **Next.js 15**, **TypeScript**,
 
 | Layer | Technology |
 |---|---|
-| Framework | [Next.js 15](https://nextjs.org/) (App Router) |
+| Framework | [Next.js 15.5](https://nextjs.org/) (App Router) |
 | Language | TypeScript 5 |
-| Styling | Tailwind CSS 3 + `tailwindcss-animate` |
+| Styling | Tailwind CSS 3.4 + `tailwindcss-animate` |
 | UI Components | Radix UI primitives (via shadcn/ui) |
-| Icons | [Lucide React](https://lucide.dev/) |
-| Theming | [next-themes](https://github.com/pacocoursey/next-themes) |
+| Icons | [Lucide React 0.577](https://lucide.dev/) |
+| Theming | [next-themes 0.4](https://github.com/pacocoursey/next-themes) |
 | Font | Inter (Google Fonts) |
-| Forms | React Hook Form + Zod |
-| Package Manager | pnpm |
+| Forms | React Hook Form 7.54 + Zod 3 |
+| Package Manager | npm / pnpm |
 
 ---
 
@@ -105,6 +105,57 @@ The static output will be generated in the `out/` directory (configured via `out
 | `pnpm build` | Build static export to `out/` |
 | `pnpm start` | Serve the production build locally |
 | `pnpm lint` | Run ESLint |
+
+---
+
+## 🚀 Deployment (GitHub Pages → tarun.win)
+
+The project uses a **GitHub Actions CI/CD pipeline** that automatically builds and deploys to [GitHub Pages](https://pages.github.com/) on every push to `main`.
+
+### How it works
+
+```
+Push to main
+    │
+    ▼
+.github/workflows/deploy.yml
+    │
+    ├─ Install deps (npm ci)
+    ├─ Build static export (npm run build → out/)
+    └─ Deploy out/ → GitHub Pages → tarun.win
+```
+
+### One-time GitHub setup (do this once)
+
+1. Go to your repo: **Settings → Pages**
+2. Under **Source**, select **GitHub Actions**
+3. Under **Custom domain**, enter `tarun.win` and click **Save**
+4. Check **Enforce HTTPS** once the domain verifies
+
+### DNS records at your domain registrar
+
+Add these records pointing `tarun.win` to GitHub Pages:
+
+| Type | Host | Value |
+|---|---|---|
+| `A` | `@` | `185.199.108.153` |
+| `A` | `@` | `185.199.109.153` |
+| `A` | `@` | `185.199.110.153` |
+| `A` | `@` | `185.199.111.153` |
+| `CNAME` | `www` | `tarun-gurugubelli.github.io` |
+
+> DNS propagation can take up to 24 hours. GitHub will provision a free TLS certificate automatically once the domain resolves.
+
+### Triggering a deploy
+
+| Action | Result |
+|---|---|
+| `git push origin main` | Automatically triggers the workflow |
+| GitHub Actions tab → **Run workflow** | Manual trigger |
+
+### Workflow file
+
+See [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml)
 
 ---
 
