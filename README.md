@@ -6,7 +6,7 @@ A professional portfolio landing page built with **Next.js 15**, **TypeScript**,
 
 ## 🚀 Live
 
-- **Portfolio Hub**: [tarun.win](https://tarun.win) *(root landing page)*
+- **Portfolio Hub**: [tarun.win](https://tarun.win) _(root landing page)_
 - **MEAN Stack Portfolio**: [mean.tarun.win](https://mean.tarun.win)
 - **DevOps Portfolio**: [devops.tarun.win](https://devops.tarun.win)
 
@@ -25,17 +25,17 @@ A professional portfolio landing page built with **Next.js 15**, **TypeScript**,
 
 ## 🛠️ Tech Stack
 
-| Layer | Technology |
-|---|---|
-| Framework | [Next.js 15.5](https://nextjs.org/) (App Router) |
-| Language | TypeScript 5 |
-| Styling | Tailwind CSS 3.4 + `tailwindcss-animate` |
-| UI Components | Radix UI primitives (via shadcn/ui) |
-| Icons | [Lucide React 0.577](https://lucide.dev/) |
-| Theming | [next-themes 0.4](https://github.com/pacocoursey/next-themes) |
-| Font | Inter (Google Fonts) |
-| Forms | React Hook Form 7.54 + Zod 3 |
-| Package Manager | npm / pnpm |
+| Layer           | Technology                                                    |
+| --------------- | ------------------------------------------------------------- |
+| Framework       | [Next.js 15.5](https://nextjs.org/) (App Router)              |
+| Language        | TypeScript 5                                                  |
+| Styling         | Tailwind CSS 3.4 + `tailwindcss-animate`                      |
+| UI Components   | Radix UI primitives (via shadcn/ui)                           |
+| Icons           | [Lucide React 0.577](https://lucide.dev/)                     |
+| Theming         | [next-themes 0.4](https://github.com/pacocoursey/next-themes) |
+| Font            | Inter (Google Fonts)                                          |
+| Forms           | React Hook Form 7.54 + Zod 3                                  |
+| Package Manager | npm / pnpm                                                    |
 
 ---
 
@@ -99,12 +99,12 @@ The static output will be generated in the `out/` directory (configured via `out
 
 ### Other scripts
 
-| Command | Description |
-|---|---|
-| `pnpm dev` | Start local dev server |
-| `pnpm build` | Build static export to `out/` |
+| Command      | Description                        |
+| ------------ | ---------------------------------- |
+| `pnpm dev`   | Start local dev server             |
+| `pnpm build` | Build static export to `out/`      |
 | `pnpm start` | Serve the production build locally |
-| `pnpm lint` | Run ESLint |
+| `pnpm lint`  | Run ESLint                         |
 
 ---
 
@@ -136,22 +136,22 @@ Push to main
 
 Add these records pointing `tarun.win` to GitHub Pages:
 
-| Type | Host | Value |
-|---|---|---|
-| `A` | `@` | `185.199.108.153` |
-| `A` | `@` | `185.199.109.153` |
-| `A` | `@` | `185.199.110.153` |
-| `A` | `@` | `185.199.111.153` |
+| Type    | Host  | Value                         |
+| ------- | ----- | ----------------------------- |
+| `A`     | `@`   | `185.199.108.153`             |
+| `A`     | `@`   | `185.199.109.153`             |
+| `A`     | `@`   | `185.199.110.153`             |
+| `A`     | `@`   | `185.199.111.153`             |
 | `CNAME` | `www` | `tarun-gurugubelli.github.io` |
 
 > DNS propagation can take up to 24 hours. GitHub will provision a free TLS certificate automatically once the domain resolves.
 
 ### Triggering a deploy
 
-| Action | Result |
-|---|---|
-| `git push origin main` | Automatically triggers the workflow |
-| GitHub Actions tab → **Run workflow** | Manual trigger |
+| Action                                | Result                              |
+| ------------------------------------- | ----------------------------------- |
+| `git push origin main`                | Automatically triggers the workflow |
+| GitHub Actions tab → **Run workflow** | Manual trigger                      |
 
 ### Workflow file
 
@@ -167,11 +167,11 @@ The app uses CSS custom properties for its color system, wired through Tailwind'
 
 ## 📬 Contact
 
-| Platform | Link |
-|---|---|
-| GitHub | [github.com/tarun-gurugubelli](https://github.com/tarun-gurugubelli) |
+| Platform | Link                                                                           |
+| -------- | ------------------------------------------------------------------------------ |
+| GitHub   | [github.com/tarun-gurugubelli](https://github.com/tarun-gurugubelli)           |
 | LinkedIn | [linkedin.com/in/tarun-gurugubelli](https://linkedin.com/in/tarun-gurugubelli) |
-| Email | tarungurugubelli@outlook.com |
+| Email    | tarungurugubelli@outlook.com                                                   |
 
 ---
 
