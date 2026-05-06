@@ -1,178 +1,217 @@
 # Tarun's Portfolio Hub
 
-A professional portfolio landing page built with **Next.js 15**, **TypeScript**, and **Tailwind CSS**. It serves as a central hub that directs visitors to two specialized portfolio sites: a **MEAN Stack** portfolio and a **DevOps** portfolio.
+Tarun's Portfolio Hub is a static portfolio landing web app that helps visitors choose between two focused portfolio experiences: MEAN Stack development and DevOps engineering. The root page presents a responsive portfolio hub with dark/light theme support, social links, a contact modal, and navigation cards that point to the live MEAN and DevOps portfolio sites.
 
----
+## Live Application
 
-## 🚀 Live
+- Portfolio Hub: [https://tarun.win](https://tarun.win)
+- MEAN Stack Portfolio: [https://mean.tarun.win](https://mean.tarun.win)
+- DevOps Portfolio: [https://devops.tarun.win](https://devops.tarun.win)
 
-- **Portfolio Hub**: [tarun.win](https://tarun.win) _(root landing page)_
-- **MEAN Stack Portfolio**: [mean.tarun.win](https://mean.tarun.win)
-- **DevOps Portfolio**: [devops.tarun.win](https://devops.tarun.win)
+## Web App Summary
 
----
+This application is built with the Next.js App Router and exported as a static site. It is designed for simple hosting on GitHub Pages or any static hosting provider.
 
-## ✨ Features
+Key features:
 
-- **Dual Portfolio Navigation** — Clean card-based UI to route visitors to either the MEAN Stack or DevOps portfolio
-- **Dark / Light Mode** — System-aware theme with a toggle; defaults to dark mode
-- **Contact Modal** — "Get In Touch" dialog with links to GitHub, LinkedIn, and email
-- **Responsive Design** — Mobile-first layout using Tailwind CSS grid and spacing utilities
-- **Static Export** — Built as a fully static site (`output: 'export'`) for easy deployment to any CDN
-- **Smooth Animations** — Hover effects, scale transforms, and transition animations throughout
+- Landing page for choosing between MEAN Stack and DevOps portfolios
+- Responsive layout for desktop, tablet, and mobile screens
+- Dark and light theme support using `next-themes`
+- Contact modal with GitHub, LinkedIn, and email actions
+- Static export output generated into the `out/` directory
+- GitHub Actions workflow for automatic GitHub Pages deployment
 
----
+## Tech Stack
 
-## 🛠️ Tech Stack
+| Area | Technology |
+| --- | --- |
+| Framework | Next.js 15 with App Router |
+| Language | TypeScript |
+| UI Library | React 18 |
+| Styling | Tailwind CSS |
+| Theme Mode | next-themes |
+| Components | Radix UI primitives and shadcn-style components |
+| Icons | Lucide React |
+| Utility Styling | clsx, tailwind-merge, class-variance-authority |
+| Forms/Validation Packages | React Hook Form, Zod, @hookform/resolvers |
+| Charts/UI Packages Available | Recharts, Sonner, Vaul, Embla Carousel, React Day Picker |
+| Deployment | GitHub Actions and GitHub Pages |
 
-| Layer           | Technology                                                    |
-| --------------- | ------------------------------------------------------------- |
-| Framework       | [Next.js 15.5](https://nextjs.org/) (App Router)              |
-| Language        | TypeScript 5                                                  |
-| Styling         | Tailwind CSS 3.4 + `tailwindcss-animate`                      |
-| UI Components   | Radix UI primitives (via shadcn/ui)                           |
-| Icons           | [Lucide React 0.577](https://lucide.dev/)                     |
-| Theming         | [next-themes 0.4](https://github.com/pacocoursey/next-themes) |
-| Font            | Inter (Google Fonts)                                          |
-| Forms           | React Hook Form 7.54 + Zod 3                                  |
-| Package Manager | npm / pnpm                                                    |
+## Modules Used
 
----
+Main application modules:
 
-## 📁 Project Structure
+- `app/layout.tsx` - Root layout, metadata, Inter font setup, and theme provider wrapper.
+- `app/page.tsx` - Main portfolio hub page with hero section, portfolio cards, about section, footer, and contact modal state.
+- `app/mean-stack/page.tsx` - Placeholder route for the MEAN Stack portfolio section.
+- `app/devops/page.tsx` - Placeholder route for the DevOps portfolio section.
+- `components/contact-modal.tsx` - Contact dialog with GitHub, LinkedIn, and email actions.
+- `components/theme-toggle.tsx` - Dark/light theme toggle button.
+- `components/theme-provider.tsx` - `next-themes` provider wrapper.
+- `components/ui/button.tsx` - Reusable button component built with Radix Slot and class variance utilities.
+- `lib/utils.ts` - Shared `cn()` utility for combining Tailwind class names.
+- `app/globals.css` - Global styles and theme CSS variables.
+- `tailwind.config.ts` - Tailwind theme configuration and animation plugin setup.
+- `next.config.mjs` - Next.js static export configuration.
 
+## Prerequisites
+
+Install the following before running the app:
+
+- Node.js 20 or later is recommended because the deployment workflow uses Node.js 20.
+- npm, which is included with Node.js.
+
+The repository also includes a `pnpm-lock.yaml`, so pnpm can be used locally if preferred. The GitHub Actions workflow uses npm.
+
+## Install Packages
+
+Using npm:
+
+```bash
+npm install --legacy-peer-deps
 ```
-landing-portfolio/
-├── app/
-│   ├── layout.tsx          # Root layout — metadata, font, ThemeProvider
-│   ├── page.tsx            # Main landing page (Hero + About sections)
-│   ├── globals.css         # Global styles & CSS variables
-│   ├── devops/
-│   │   └── page.tsx        # /devops route (placeholder)
-│   └── mean-stack/
-│       └── page.tsx        # /mean-stack route (placeholder)
-├── components/
-│   ├── contact-modal.tsx   # "Get In Touch" modal with GitHub/LinkedIn/Email
-│   ├── theme-provider.tsx  # next-themes wrapper
-│   ├── theme-toggle.tsx    # Sun/Moon icon toggle button
-│   └── ui/
-│       └── button.tsx      # shadcn/ui Button component
-├── lib/
-│   └── utils.ts            # cn() utility (clsx + tailwind-merge)
-├── public/                 # Static assets
-├── next.config.mjs         # Next.js config (static export, trailing slash)
-├── tailwind.config.ts      # Tailwind theme + CSS variable tokens
-├── tsconfig.json
-└── package.json
+
+For a clean CI-style install:
+
+```bash
+npm ci --legacy-peer-deps
 ```
 
----
-
-## ⚙️ Getting Started
-
-### Prerequisites
-
-- **Node.js** ≥ 18
-- **pnpm** (recommended) — `npm install -g pnpm`
-
-### Install dependencies
+Using pnpm:
 
 ```bash
 pnpm install
 ```
 
-### Run development server
+## Run Locally
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+Open the app at:
+
+```text
+http://localhost:3000
+```
+
+With pnpm:
 
 ```bash
 pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) in your browser.
+## Build
 
-### Build for production
+Create a production static export:
+
+```bash
+npm run build
+```
+
+With pnpm:
 
 ```bash
 pnpm build
 ```
 
-The static output will be generated in the `out/` directory (configured via `output: 'export'` in `next.config.mjs`).
+The build output is generated in:
 
-### Other scripts
-
-| Command      | Description                        |
-| ------------ | ---------------------------------- |
-| `pnpm dev`   | Start local dev server             |
-| `pnpm build` | Build static export to `out/`      |
-| `pnpm start` | Serve the production build locally |
-| `pnpm lint`  | Run ESLint                         |
-
----
-
-## 🚀 Deployment (GitHub Pages → tarun.win)
-
-The project uses a **GitHub Actions CI/CD pipeline** that automatically builds and deploys to [GitHub Pages](https://pages.github.com/) on every push to `main`.
-
-### How it works
-
+```text
+out/
 ```
-Push to main
-    │
-    ▼
+
+This happens because `next.config.mjs` uses:
+
+```js
+output: "export"
+```
+
+## Run Production Build Locally
+
+Because this project is configured as a static export, the production artifact is the `out/` folder. After building, serve it with any static file server.
+
+Example:
+
+```bash
+npx serve out
+```
+
+## Deployment
+
+The app is deployed to GitHub Pages through the workflow at:
+
+```text
 .github/workflows/deploy.yml
-    │
-    ├─ Install deps (npm ci)
-    ├─ Build static export (npm run build → out/)
-    └─ Deploy out/ → GitHub Pages → tarun.win
 ```
 
-### One-time GitHub setup (do this once)
+Deployment flow:
 
-1. Go to your repo: **Settings → Pages**
-2. Under **Source**, select **GitHub Actions**
-3. Under **Custom domain**, enter `tarun.win` and click **Save**
-4. Check **Enforce HTTPS** once the domain verifies
+1. Push changes to the `main` branch, or manually run the workflow from the GitHub Actions tab.
+2. GitHub Actions checks out the repository.
+3. Node.js 20 is installed.
+4. Dependencies are installed with `npm ci --legacy-peer-deps`.
+5. The app is built with `npm run build`.
+6. The generated `out/` folder is uploaded as the GitHub Pages artifact.
+7. GitHub Pages deploys the static site.
 
-### DNS records at your domain registrar
+GitHub Pages setup:
 
-Add these records pointing `tarun.win` to GitHub Pages:
+1. Go to the repository settings in GitHub.
+2. Open `Settings > Pages`.
+3. Set the source to `GitHub Actions`.
+4. Add the custom domain `tarun.win` if needed.
+5. Enable HTTPS after GitHub verifies the domain.
 
-| Type    | Host  | Value                         |
-| ------- | ----- | ----------------------------- |
-| `A`     | `@`   | `185.199.108.153`             |
-| `A`     | `@`   | `185.199.109.153`             |
-| `A`     | `@`   | `185.199.110.153`             |
-| `A`     | `@`   | `185.199.111.153`             |
-| `CNAME` | `www` | `tarun-gurugubelli.github.io` |
+The custom domain file is stored at:
 
-> DNS propagation can take up to 24 hours. GitHub will provision a free TLS certificate automatically once the domain resolves.
+```text
+public/CNAME
+```
 
-### Triggering a deploy
+## Available Scripts
 
-| Action                                | Result                              |
-| ------------------------------------- | ----------------------------------- |
-| `git push origin main`                | Automatically triggers the workflow |
-| GitHub Actions tab → **Run workflow** | Manual trigger                      |
+| Command | Description |
+| --- | --- |
+| `npm run dev` | Starts the local Next.js development server. |
+| `npm run build` | Builds the application and exports static files to `out/`. |
+| `npm run start` | Runs `next start`; this is not the preferred command for the static export output. |
+| `npm run lint` | Runs the configured Next.js lint command. |
 
-### Workflow file
+## Project Structure
 
-See [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml)
+```text
+landing-portfolio/
+├── app/
+│   ├── devops/
+│   │   └── page.tsx
+│   ├── mean-stack/
+│   │   └── page.tsx
+│   ├── globals.css
+│   ├── layout.tsx
+│   └── page.tsx
+├── components/
+│   ├── ui/
+│   │   └── button.tsx
+│   ├── contact-modal.tsx
+│   ├── theme-provider.tsx
+│   └── theme-toggle.tsx
+├── lib/
+│   └── utils.ts
+├── public/
+│   └── CNAME
+├── styles/
+│   └── globals.css
+├── next.config.mjs
+├── package.json
+├── tailwind.config.ts
+└── tsconfig.json
+```
 
----
+## Contact
 
-## 🎨 Theming
-
-The app uses CSS custom properties for its color system, wired through Tailwind's `extend.colors` config. All tokens (`--background`, `--foreground`, `--primary`, etc.) are defined in `app/globals.css` for both light and dark variants. The default theme is **dark**.
-
----
-
-## 📬 Contact
-
-| Platform | Link                                                                           |
-| -------- | ------------------------------------------------------------------------------ |
-| GitHub   | [github.com/tarun-gurugubelli](https://github.com/tarun-gurugubelli)           |
-| LinkedIn | [linkedin.com/in/tarun-gurugubelli](https://linkedin.com/in/tarun-gurugubelli) |
-| Email    | tarungurugubelli@outlook.com                                                   |
-
----
-
-© 2025 Tarun's Portfolio Hub. Crafted with passion.
+- GitHub: [github.com/tarun-gurugubelli](https://github.com/tarun-gurugubelli)
+- LinkedIn: [linkedin.com/in/tarun-gurugubelli](https://linkedin.com/in/tarun-gurugubelli)
+- Email: [tarungurugubelli@outlook.com](mailto:tarungurugubelli@outlook.com)
