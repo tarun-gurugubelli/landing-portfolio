@@ -1,0 +1,245 @@
+<div class="min-h-screen bg-white dark:bg-black transition-colors duration-500">
+
+  <!-- Background Pattern -->
+  <div class="absolute inset-0 opacity-5 dark:opacity-10 pointer-events-none">
+    <div
+      class="absolute inset-0"
+      style="background-image: radial-gradient(circle at 25% 25%, rgba(0,0,0,0.1) 0%, transparent 50%), radial-gradient(circle at 75% 75%, rgba(0,0,0,0.1) 0%, transparent 50%)"
+    ></div>
+  </div>
+
+  <!-- Header -->
+  <header class="relative z-10 px-4 py-6 sm:px-6 lg:px-8 border-b border-gray-200 dark:border-gray-800">
+    <nav class="flex justify-between items-center max-w-7xl mx-auto">
+      <div class="text-2xl font-bold text-black dark:text-white transition-colors duration-300">
+        Tarun's Portfolio Hub
+      </div>
+      <div class="flex items-center space-x-4">
+        <!-- GitHub -->
+        <a
+          href="https://github.com/tarun-gurugubelli"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors duration-300"
+          aria-label="GitHub"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/>
+            <path d="M9 18c-4.51 2-5-2-7-2"/>
+          </svg>
+        </a>
+        <!-- LinkedIn -->
+        <a
+          href="https://linkedin.com/in/tarun-gurugubelli"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors duration-300"
+          aria-label="LinkedIn"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+            <rect width="4" height="12" x="2" y="9"/>
+            <circle cx="4" cy="4" r="2"/>
+          </svg>
+        </a>
+        <!-- Mail -->
+        <a
+          href="mailto:tarungurugubelli@outlook.com"
+          class="text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors duration-300"
+          aria-label="Email"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect width="20" height="16" x="2" y="4" rx="2"/>
+            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+          </svg>
+        </a>
+        <app-theme-toggle />
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="relative z-10">
+
+    <!-- Hero Section -->
+    <section class="flex items-center justify-center min-h-[80vh] px-4 sm:px-6 lg:px-8">
+      <div class="max-w-6xl mx-auto text-center">
+        <div class="mb-16 animate-fade-in">
+          <h1 class="text-5xl sm:text-6xl lg:text-7xl font-bold text-black dark:text-white mb-6 leading-tight transition-colors duration-300">
+            Choose Your
+            <span class="block text-gray-600 dark:text-gray-400 transition-colors duration-300">Journey</span>
+          </h1>
+          <p class="text-xl sm:text-2xl text-gray-700 dark:text-gray-300 mb-12 max-w-3xl mx-auto leading-relaxed transition-colors duration-300">
+            Explore my expertise in full-stack development and DevOps engineering. Select your area of interest to
+            dive deeper into my work.
+          </p>
+        </div>
+
+        <!-- Portfolio Options -->
+        <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+
+          <!-- MEAN Stack Portfolio -->
+          <div class="group relative">
+            <div class="absolute -inset-1 bg-black dark:bg-white rounded-2xl opacity-0 group-hover:opacity-10 transition duration-500"></div>
+            <a href="https://mean.tarun.win" target="_blank" rel="noopener noreferrer" class="relative block">
+              <div class="bg-gray-50 dark:bg-gray-900 rounded-2xl p-8 sm:p-10 border-2 border-gray-200 dark:border-gray-800 hover:border-black dark:hover:border-white transition-all duration-500 transform hover:scale-105 hover:-translate-y-2">
+                <div class="flex justify-center mb-6">
+                  <div class="p-4 bg-black dark:bg-white rounded-full">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white dark:text-black">
+                      <polyline points="16 18 22 12 16 6"/>
+                      <polyline points="8 6 2 12 8 18"/>
+                    </svg>
+                  </div>
+                </div>
+                <h2 class="text-3xl font-bold text-black dark:text-white mb-4 transition-colors duration-300">
+                  MEAN Stack
+                </h2>
+                <p class="text-gray-700 dark:text-gray-300 mb-6 leading-relaxed transition-colors duration-300">
+                  Full-stack web development with MongoDB, Express.js, Angular, and Node.js. Explore my dynamic web
+                  applications and modern frontend solutions.
+                </p>
+                <div class="flex items-center justify-center text-gray-600 dark:text-gray-400 group-hover:text-black dark:group-hover:text-white transition-colors duration-300">
+                  <span class="font-semibold mr-2">View Portfolio</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="transform group-hover:translate-x-1 transition-transform duration-300">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                  </svg>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- DevOps Portfolio -->
+          <div class="group relative">
+            <div class="absolute -inset-1 bg-black dark:bg-white rounded-2xl opacity-0 group-hover:opacity-10 transition duration-500"></div>
+            <a href="https://devops.tarun.win" target="_blank" rel="noopener noreferrer" class="relative block">
+              <div class="bg-gray-50 dark:bg-gray-900 rounded-2xl p-8 sm:p-10 border-2 border-gray-200 dark:border-gray-800 hover:border-black dark:hover:border-white transition-all duration-500 transform hover:scale-105 hover:-translate-y-2">
+                <div class="flex justify-center mb-6">
+                  <div class="p-4 bg-black dark:bg-white rounded-full">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white dark:text-black">
+                      <rect width="20" height="8" x="2" y="2" rx="2"/>
+                      <rect width="20" height="8" x="2" y="14" rx="2"/>
+                      <line x1="6" x2="6" y1="6" y2="6"/>
+                      <line x1="6" x2="6" y1="18" y2="18"/>
+                    </svg>
+                  </div>
+                </div>
+                <h2 class="text-3xl font-bold text-black dark:text-white mb-4 transition-colors duration-300">
+                  DevOps
+                </h2>
+                <p class="text-gray-700 dark:text-gray-300 mb-6 leading-relaxed transition-colors duration-300">
+                  Infrastructure automation, CI/CD pipelines, and cloud solutions. Discover my expertise in
+                  deployment, monitoring, and system optimization.
+                </p>
+                <div class="flex items-center justify-center text-gray-600 dark:text-gray-400 group-hover:text-black dark:group-hover:text-white transition-colors duration-300">
+                  <span class="font-semibold mr-2">View Portfolio</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="transform group-hover:translate-x-1 transition-transform duration-300">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                  </svg>
+                </div>
+              </div>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50 dark:bg-gray-950 transition-colors duration-500">
+      <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl sm:text-5xl font-bold text-black dark:text-white mb-6 transition-colors duration-300">
+            About Me
+          </h2>
+          <p class="text-xl text-gray-700 dark:text-gray-300 max-w-3xl mx-auto transition-colors duration-300">
+            Passionate developer with expertise spanning full-stack development and DevOps engineering, dedicated to
+            creating robust, scalable solutions.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+          <!-- Experience -->
+          <div class="text-center group">
+            <div class="flex justify-center mb-6">
+              <div class="p-4 bg-black dark:bg-white rounded-full group-hover:scale-110 transition-transform duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white dark:text-black">
+                  <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/>
+                  <circle cx="12" cy="7" r="4"/>
+                </svg>
+              </div>
+            </div>
+            <h3 class="text-2xl font-bold text-black dark:text-white mb-4 transition-colors duration-300">Experience</h3>
+            <p class="text-gray-700 dark:text-gray-300 leading-relaxed transition-colors duration-300">
+              4+ years of hands-on experience in developing scalable web applications and managing cloud
+              infrastructure across various industries and project scales.
+            </p>
+          </div>
+
+          <!-- Skills -->
+          <div class="text-center group">
+            <div class="flex justify-center mb-6">
+              <div class="p-4 bg-black dark:bg-white rounded-full group-hover:scale-110 transition-transform duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white dark:text-black">
+                  <circle cx="12" cy="8" r="6"/>
+                  <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/>
+                </svg>
+              </div>
+            </div>
+            <h3 class="text-2xl font-bold text-black dark:text-white mb-4 transition-colors duration-300">Skills</h3>
+            <p class="text-gray-700 dark:text-gray-300 leading-relaxed transition-colors duration-300">
+              Proficient in modern web technologies, cloud platforms, containerization, CI/CD pipelines, and
+              infrastructure as code with a focus on best practices.
+            </p>
+          </div>
+
+          <!-- Mission -->
+          <div class="text-center group">
+            <div class="flex justify-center mb-6">
+              <div class="p-4 bg-black dark:bg-white rounded-full group-hover:scale-110 transition-transform duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white dark:text-black">
+                  <circle cx="12" cy="12" r="10"/>
+                  <circle cx="12" cy="12" r="6"/>
+                  <circle cx="12" cy="12" r="2"/>
+                </svg>
+              </div>
+            </div>
+            <h3 class="text-2xl font-bold text-black dark:text-white mb-4 transition-colors duration-300">Mission</h3>
+            <p class="text-gray-700 dark:text-gray-300 leading-relaxed transition-colors duration-300">
+              Committed to delivering high-quality solutions that drive business growth while maintaining code
+              excellence and operational efficiency.
+            </p>
+          </div>
+        </div>
+
+        <!-- Call to Action -->
+        <div class="text-center mt-16">
+          <p class="text-lg text-gray-600 dark:text-gray-400 mb-8 transition-colors duration-300">
+            Ready to collaborate? Let's build something amazing together.
+          </p>
+          <button
+            (click)="openContactModal()"
+            class="inline-flex items-center px-8 py-4 bg-black dark:bg-white text-white dark:text-black font-semibold rounded-lg hover:bg-gray-800 dark:hover:bg-gray-200 transition-all duration-300 transform hover:scale-105"
+          >
+            Get In Touch
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-2">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="relative z-10 py-8 px-4 sm:px-6 lg:px-8 border-t border-gray-200 dark:border-gray-800">
+    <div class="max-w-7xl mx-auto text-center">
+      <p class="text-gray-600 dark:text-gray-400 transition-colors duration-300">
+        &copy; {{ currentYear }} Tarun's Portfolio Hub. Crafted with passion.
+      </p>
+    </div>
+  </footer>
+
+</div>
+
+<app-contact-modal [isOpen]="isContactModalOpen()" (closed)="closeContactModal()" />
