@@ -35,13 +35,13 @@ jobs:
       - name: Install dependencies
         run: npm ci --legacy-peer-deps
 
-      - name: Build Next.js static export
+      - name: Build Angular app
         run: npm run build
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./out
+          path: ./dist/portfolio-hub/browser
 
   deploy:
     name: Deploy
